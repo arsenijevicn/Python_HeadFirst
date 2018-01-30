@@ -1,9 +1,5 @@
-vowels = ['a', 'e', 'i', 'o','u']
+vowels = set('aeiou')
 word = input("Upisite rec: ")
-found = []
-for letter in word:
-    if letter in vowels:
-        if letter not in found:
-            found.append(letter)
-for vowel in found:
-    print(vowel)
+found = vowels.intersection(set(word))
+for vowels in found:
+    print(vowels)
