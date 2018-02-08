@@ -1,4 +1,5 @@
-def search4vowels(phrase: str) -> set:  # komentar: ovo su anotacije(opisi), ali su zbunjujuci
+# komentar: ovo su anotacije(opisi), ali su zbunjujuci
+def search4vowels(phrase: str) -> set:
     """Returns any vowels found in suplied word"""
     vowels = set("aeiou")
     return print(vowels.intersection(set(phrase)))
