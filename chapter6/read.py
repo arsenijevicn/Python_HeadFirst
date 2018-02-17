@@ -1,6 +1,10 @@
-tasks = open('todos.txt')
+# tasks = open('todos.txt')
+#
+# for chore in tasks:
+#     print(chore,end="")
+#
+# tasks.close()
 
-for chore in tasks:
-    print(chore)
-
-tasks.close()
+with open('todos.txt') as tasks:
+    for chore in tasks:
+        print(chore, end="")
